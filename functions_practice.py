@@ -1,5 +1,6 @@
 def hello():
-print("Hello, user!")
+    print("Hello, user!")
+
 
 def pack(maria, jose, teresa):
     return[maria, jose, teresa]
@@ -9,9 +10,14 @@ def eat_lunch(my_list):
         print("my lunchbox is empty!")
     else:
         for i in range(len(my_list)):
+            item = "I eat {}".format(my_list[i])
             if i==0:
-                print(f"First i eat {my_list[0]})
+                print("First {}".format(item))
             else:
-                 print(f"Next I eat {my_list[i]}")
+                 print("Next {}".format(item))
 
 
+hello()
+print(pack(1, 2, 3))
+eat_lunch(["apple", "carrot", "tomato"])
+eat_lunch([])
